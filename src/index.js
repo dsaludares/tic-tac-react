@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
 
 class Square extends React.Component {
     render() {
@@ -66,10 +64,4 @@ class Square extends React.Component {
   ReactDOM.render(
     <Game />,
     document.getElementById('root')
-  );  
-
-  ReactDOM.render(
-    <App />,
-    document.getElementById('root')
   );
-  registerServiceWorker();
