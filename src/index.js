@@ -92,6 +92,11 @@ class Game extends React.Component {
 // ========================================
 
 ReactDOM.render(
+  <App />,
+  document.getElementById('header')
+);
+
+ReactDOM.render(
   <Game />,
   document.getElementById('root')
 );
