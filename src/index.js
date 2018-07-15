@@ -89,18 +89,6 @@ class Game extends React.Component {
   }
 }
 
-// ========================================
-
-ReactDOM.render(
-  <App />,
-  document.getElementById('header')
-);
-
-ReactDOM.render(
-  <Game />,
-  document.getElementById('root')
-);
-
 function calculateWinner(squares) {
   const lines = [
     [0, 1, 2],
@@ -120,3 +108,15 @@ function calculateWinner(squares) {
   }
   return null;
 }
+
+// ========================================
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('header')
+);
+
+ReactDOM.render(
+  <Game />,
+  document.getElementById('root')
+);
