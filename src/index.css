@@ -55,7 +55,7 @@ ol, ul {
 .App-chicken {
   animation: App-chicken-spin infinite 10s linear;
   height: 80px;
-  margin-top: 30px;
+  margin: 30px 0 20px 0;
 }
 
 @keyframes App-chicken-spin {
