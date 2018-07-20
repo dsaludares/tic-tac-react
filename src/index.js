@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import chicken from './chicken.svg';
 
 function Square(props) {
   return (
@@ -49,6 +50,7 @@ class Board extends React.Component {
         <div>{winner + ' is the winner!'}</div>
         <div>{'Winner winner!'}</div>
         <div>{'Chicken dinner!'}</div>
+        <img src={chicken} alt="chicken dinner" />
       </div>;
     } else {
       status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
