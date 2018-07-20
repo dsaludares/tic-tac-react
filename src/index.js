@@ -40,7 +40,6 @@ class Board extends React.Component {
           {this.renderSquare(7)}
           {this.renderSquare(8)}
         </div>
-        <div className="status">{status}</div>
       </div>
     );
   }
@@ -78,13 +77,13 @@ handleClick(i) {
   const current = history[history.length - 1];
   const winner = calculateWinner(current.squares);
 
-  const moves = history.map((StereoPannerNode, move) => {
+  const moves = history.map((step, move) => {
     const desc = move ?
       'Go to move #' + move :
       'Go to game start';
     return (
       <li>
-        <button onClick={() => this.jumptTo(move)}>{desc}</button>
+        <button onClick={() => this.jumpTo(move)}>{desc}</button>
       </li>
     );
   });
