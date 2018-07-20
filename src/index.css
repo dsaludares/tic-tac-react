@@ -51,3 +51,13 @@ ol, ul {
 .game-info {
   margin-left: 20px;
 }
+
+.App-chicken {
+  animation: App-chicken-spin infinite 20s linear;
+  height: 80px;
+}
+
+@keyframes App-chicken-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
