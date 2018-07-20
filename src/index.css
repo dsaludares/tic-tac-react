@@ -53,7 +53,7 @@ ol, ul {
 }
 
 .App-chicken {
-  animation: App-chicken-spin infinite 20s linear;
+  animation: App-chicken-spin infinite 10s linear;
   height: 80px;
   margin-top: 30px;
 }
